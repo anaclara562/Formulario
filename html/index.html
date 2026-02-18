@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulários Inteligentes</title>
+</head>
+<body>
+    <header>
+        <h1>Formulários Inteligentes</h1>
+    </header>
+    <div class="form-ins">
+        <h1>1. Formulário de Inscrição</h1>
+        <form id="form-inscricao">
+            <label>Nome:</label>
+            <input type="text" id="nome">
+            <br>
+            <br>
+            <label>Idade:</label>
+            <input type="number" id="idade">
+            <br>
+            <br>
+            <label>Nível de Experiência (1 a 10):</label>
+            <input type="number" id="nivel">
+            <br>
+            <br>
+            <button type="button" onclick="validar()">Enviar</button>
+        </form>
+        <p id="mensagem"></p>
+    </div>
+    <br>
+    <br>
+    <div class="Desafio_1">
+        <h1>2. Validador de senhas</h1>
+        <form id="Desafio_1">
+            <label>Senha:</label>
+            <input type="password" id="senha1">
+            <br>
+            <br>
+            <label>Confirme sua senha:</label>
+            <input type="password" id="senha2">
+            <br>
+            <br>
+            <button type="button" onclick="validarsenha()">Enviar Senha</button>
+        </form>
+        <p id="mensagem2"></p>
+    </div>
+    <br>
+    <br>
+    <div class="Desafio_2">
+        <h1>3. Promoção Especial</h1>
+        <form id="Desafio_2">
+            <p>É estudante?</p>
+                <label>Sim</label>
+                <input type="radio" name="estudante" id="sim" value="true">
+                    
+                <label>Não</label>
+                <input type="radio" name="estudante" id="nao" value="false">
+            <br>
+            <br>
+            <label>Idade:</label>
+            <br>
+            <input type="number" id="idade1">
+            <br>
+            <br>
+            <button type="button" onclick="aplicardesconto()">Verificar desconto</button>
+        </form>
+        <p id="mensagem3"></p>
+    </div>
+    <footer>
+        <p>© 2026 - Ana Clara Rodrigues</p>
+    </footer>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
