@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulários Inteligentes</h1>
+    </header>
+
+    <div class="forms">
+
+        <div class="card">
+            <br>
+            <h2>1. Formulário de Inscrição</h2>
+            <form>
+                <label>Nome:</label>
+                <br>
+                <input type="text" id="nome">
+                <br>
+                <label>Idade:</label>
+                <br>
+                <input type="number" id="idade">
+                <br>
+                <label>Nível de Experiência (1 a 10):</label>
+                <br>
+                <input type="number" id="nivel">
+                <br>
+                <button type="button" onclick="validar()">Enviar</button>
+            </form>
+            <p id="mensagem"></p>
+        </div>
+
+        <div class="card">
+            <br>
+            <h2>2. Validador de Senha</h2>
+            <br>
+            <form>
+                <label>Senha:</label>
+                <br>
+                <input type="password" id="senha1">
+                <br>
+                <br>
+                <label>Confirme sua Senha:</label>
+                <br>
+                <input type="password" id="senha2">
+                <br>
+                <br>
+                <button type="button" onclick="validarsenha()">Enviar Senha</button>
+            </form>
+            <p id="mensagem2"></p>
+        </div>
+
+        <div class="card">
+            <br>
+            <h2>3. Promoção Especial</h2>
+            <form>
+                <p>É estudante?</p>
+                <label>Sim<input type="radio" name="estudante" id="sim" value="true"></label>
+
+                <label>Não<input type="radio" name="estudante" id="nao" value="false"></label>
+                <br>
+                <br>
+                <label>Idade:</label>
+                <br>
+                <input type="number" id="idade2">
+                <br>
+                <br>
+                <button type="button" onclick="aplicardesconto()">Verificar desconto</button>
+            </form>
+            <p id="mensagem3"></p>
+        </div>
+
+        <div class="card">
+            <br>
+            <h2>4. Bouncer do Sistema</h2>
+            <br>
+            <form>
+                <label>Nome:</label>
+                <br>
+                <input type="text" id="nome2">
+                <br>
+                <br>
+                <label>Idade:</label>
+                <br>
+                <input type="number" id="idade3">
+                <br>
+                <br>
+                <button type="button" onclick="verificaracesso()">Validar Acesso</button>
+            </form>
+            <p id="mensagem4"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Ana Clara Rodrigues</p>
+    </footer>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
